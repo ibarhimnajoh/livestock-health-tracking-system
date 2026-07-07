@@ -89,10 +89,12 @@ $recent_activities = $pdo->query($query)->fetchAll();
         
         <?php if ($role == 'Admin'): ?>
             <a href="../reports/index.php"><i class="bi bi-bar-chart-line"></i> Reports</a>
+            <!-- SETTINGS CUSUB EE LAGU DARAY SIDEBAR-KA -->
+            <a href="../settings/index.php"><i class="bi bi-gear-fill"></i> Settings</a>
         <?php endif; ?>
     </div>
     <div class="sidebar-footer">
-        <a href="../index.php" class="text-danger"><i class="bi bi-box-arrow-left text-danger"></i> Sign Out</a>
+        <a href="../auth/index.php" class="text-danger"><i class="bi bi-box-arrow-left text-danger"></i> Sign Out</a>
     </div>
 </div>
 
