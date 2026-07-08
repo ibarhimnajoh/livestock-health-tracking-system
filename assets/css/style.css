@@ -1,0 +1,183 @@
+/* VetExpert Custom Branding Colors */
+:root {
+    --primary-green: #1b4324;
+    --sidebar-bg: #ffffff;
+    --main-bg: #f3f4f6;
+    --text-dark: #111827;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Sidebar Layout */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    min-height: 100vh;
+    border-right: 1px solid var(--border-color);
+    position: fixed;
+    width: 240px;
+    z-index: 100;
+}
+.sidebar-brand {
+    padding: 24px;
+    border-bottom: 1px solid #f3f4f6;
+}
+.sidebar-brand h4 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin: 0;
+}
+.sidebar a {
+    color: #4b5563;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s;
+}
+.sidebar a:hover {
+    background-color: #f9fafb;
+    color: var(--text-dark);
+}
+.sidebar a.active {
+    background-color: var(--primary-green);
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 0 12px;
+}
+.sidebar-footer {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 15px;
+}
+
+/* Main Layout */
+.main-content {
+    margin-left: 240px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar Components */
+.topbar {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container {
+    position: relative;
+}
+.search-container .bi-search {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+.search-box {
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px 8px 40px;
+    width: 320px;
+}
+
+/* Data Tables */
+.table-responsive {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+.table thead {
+    background-color: #f9fafb;
+}
+
+/* Components UI from image_bcaac3.png */
+.metric-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.metric-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+.metric-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-top: 5px;
+}
+.metric-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.alert-card {
+    border: 1px solid #fca5a5;
+    background-color: #fff5f5;
+}
+.alert-card .metric-value {
+    color: #dc2626;
+}
+
+/* Action Grids Buttons */
+.action-btn-green { background-color: var(--primary-green); color: white; border: none; border-radius: 4px; padding: 25px 15px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; }
+.action-btn-white { background-color: white; color: var(--text-dark); border: 1px solid var(--border-color); border-radius: 4px; padding: 25px 15px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.action-btn-blue { background-color: #0d47a1; color: white; border: none; border-radius: 4px; padding: 20px; font-weight: 600; width: 100%; text-align: center; display: block; text-decoration: none; }
+
+/* Status Bar & Map Styling */
+.map-placeholder {
+    background-color: #f9f6f0;
+    border: 1px solid var(--border-color);
+    height: 340px;
+    border-radius: 4px;
+    position: relative;
+}
+.bottom-status-bar {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 8px 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.floating-add {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
